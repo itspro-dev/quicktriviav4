@@ -20,10 +20,10 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
                         "Oᴡɴᴇʀ😘", url="t.me/piroXpower")
                   ],[
                     InlineKeyboardButton(
-                        "Sᴜᴩᴩᴏʀᴛ👿", url="https://t.me/patricia_Support"
+                        "Sᴜᴩᴩᴏʀᴛ👿", url="https://t.me/TGBOTSXD"
                     ),
                     InlineKeyboardButton(
-                        "Cʜᴀɴɴᴇʟ", url="https://t.me/patricia_updates"
+                        "Cʜᴀɴɴᴇʟ", url="https://t.me/TGBOTZXD"
                     )
                 ],[ 
                     InlineKeyboardButton(
