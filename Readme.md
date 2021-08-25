@@ -39,7 +39,12 @@
 
 
 ## 💡 How To Host ❓️
-The easiest way to deploy this Bot
+
+#ʜᴏsᴛ ɪᴛ ᴏɴ ʀᴀɪʟᴡᴀʏ💻
+
+[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/TEAM-PATRICIA/PatriciaMusic2.0&envs=BOT_USERNAME,BOT_TOKEN,SESSION_NAME,PROJECT_NAME,SUPPORT_GROUP,BOT_NAME,BG_IMAGE,ARQ_API_KEY,ASSISTANT_NAME,API_ID,UPDATES_CHANNEL,API_HASH,PMPERMITSUDO_USERS,DURATION_LIMIT )
+
+ʜᴏsᴛ ɪᴛ ᴏɴ ʜᴇʀᴏᴋᴜ🚀
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TEAM-PATRICIA/PatriciaMusic2.0"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
  
 
