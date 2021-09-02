@@ -113,7 +113,7 @@ async def play_new(e):
 play_layout = """
 🎥<b>Playing:</b> <a href="https://www.youtube.com/watch?v={}">{}</a>
 ⏳<b>Duration:</b> {}
-💡<b>Info:</b> <a href="https://t.me/missneko_bot?start=help">Get Additional Information</a>
+💡<b>Info:</b> <a href="https://t.me/PATRICIA_ROBOT?start=help">Get Additional Information</a>
 👤<b>Requested by:</b> {}
 """
 
