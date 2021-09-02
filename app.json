@@ -1,39 +1,91 @@
 {
-  "name": "Patricia",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
-  "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/TEAM-PATRICIA/PatriciaMusic2.0",
-  "stack": "container",
-  "env": {
-    "SESSION_NAME": {
-      "description": "Pyrogram session string",
-      "required": true
-    },
-    "BOT_TOKEN": {
-      "description": "A bot token from @BotFather",
-      "required": true
-    },
-    "BOT_NAME": {
-      "description": "Your MusicPlayer Bot Name.",
-      "required": false,
-      "value": ""
-    },
-    "API_ID": {
-      "description": "App ID from my.telegram.org/apps",
-      "required": true
-    },
-    "API_HASH": {
-      "description": "App hash from my.telegram.org/apps",
-      "required": true
-    },
-    "SUDO_USERS": {
-      "description": "List of user IDs counted as admin everywhere (separated by space).",
-      "required": true
-    },
-    "DURATION_LIMIT": {
-      "description": "Max audio duration limit for downloads (minutes).",
-      "required": true,
-      "value": "10"
-    }
-  }
+      "name": "Miley",
+      "description": "A Telethon based Telegram group management bot.",
+      "logo": "https://telegra.ph/file/e1e8299d68ada01e98c5a.jpg",
+      "keywords": [
+         "Telethon",
+         "Telegram",
+         "Group",
+         "manager",
+         "Miley"
+      ],   
+   "repository": "https://github.com/Amarnathcdj/Miley",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    }     
+  ],      
+   "env": {
+      "TOKEN": {
+         "description": "Your bot token. Get one from @BotFather duh",
+         "required": true,
+         "value": ""
+      },
+      "API_KEY": {
+         "description": "Get API_KEY from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "required": true,
+         "value": ""
+      },
+      "OWNER_USERNAME": {
+         "description": "Your username without the @",
+         "value": "RoseLoverX"
+      },
+      "STRING_SESSION": {
+         "description": "Telegram String Session",
+         "required": true,
+         "value": ""
+      },
+      "MONGO_DB_URI": {
+         "description": "MongoDB Url get from mongodb",
+         "required": true,
+         "value": ""
+      },      
+      "BOT_ID": {
+         "description": "Id of the bot",
+         "required": true,
+         "value": ""
+      },
+      "DEV_USERS": {
+         "description": "Ids of dev users seperated by space",
+         "required": false,
+         "value": ""
+      },
+      "SUDO_USERS": {
+         "description": "Ids of sudo users seperated by space",
+         "required": false,
+         "value": ""
+      },
+      "UPSTREAM_REPO_URL": {
+         "description": "Required for Update module",
+         "required": true,
+         "value": "https://github.com/Amarnathcdj/Miley"
+      }
+   },
+   "keywords": [
+      "telegram",
+      "Telethon",
+      "group",
+      "manager",
+      "Miley"
+   ],
+   "name": "Miley",
+   "repository": "https://github.com/Amarnathcdj/Miley"
 }
