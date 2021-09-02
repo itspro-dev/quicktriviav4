@@ -8,7 +8,7 @@ from telethon import Button
 @Mbot(pattern="^/playlist")
 async def playlist_show_(e):
     captions = """
-<b><i>Neko's Playlist Feature</i></b>
+<b><i>Patricia's Playlist Feature</i></b>
 
 Select The Playlist, You want to check!
 """
