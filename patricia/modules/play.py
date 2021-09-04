@@ -19,13 +19,18 @@ from . import (
 )
 from .mongodb.playlist_db import add_song, get_playlist
 
-APPROVED_LIST = [1002819739]
+OP_IMG="https://telegra.ph/file/cbb7309967e8648c21032.jpg"
+APPROVED_LIST = [1972352624]
 digits = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣"]
 ydl_opts = {
     "format": "bestaudio/best",
     "outtmpl": "%(id)s.mp3",
     "quiet": True,
 }
+
+@Mbot(pattern="^/player")
+async def get_current_playlist(e):
+    print("play")
 
 
 @Mbot(pattern="^/play ?(.*)")
@@ -37,13 +42,6 @@ async def play_new(e):
         or e.text.startswith("!playlist")
     ):
         return
-    if e.is_private:
-        return
-    if e.is_group:
-        if not e.sender_id in APPROVED_LIST and not await can_manage_call(
-            e, e.sender_id
-        ):
-            return
     if e.reply_to:
         x = await e.get_reply_message()
         if x.audio or x.voice:
@@ -74,7 +72,6 @@ async def play_new(e):
                             Button.inline("⏭️", data="next"),
                             Button.inline("⏹️", data="stop"),
                         ],
-                        [Button.inline("➕ Group Playlist", data="group_playlist")],
                         [Button.inline("➕ Personal Playlist", data="my_playlist")],
                         [Button.inline("🗑️ Close Menu", data="close_menu")],
                     ],
@@ -93,7 +90,7 @@ async def play_new(e):
     for _x in search:
         q_no += 1
         digit = digits[q_no]
-        text += f"\n{digit}<b>{_x.get('title')}</b>\n  ┗  🔗 <i><a href='t.me/missneko_bot?start=help'>Get Additional Information</a></i>"
+        text += f"\n{digit}<b>{_x.get('title')}</b>\n  ┗  🔗 <i><a href='t.me/PATRICIA_ROBOT?start=help'>Get Additional Information</a></i>"
         cb_data = _x.get("id") + "|" + str(e.sender.id)
         btn.append(Button.inline(digit, data="playsong_{}".format(cb_data)))
         if len(btn) == 3 or q_no == 4:
@@ -103,11 +100,10 @@ async def play_new(e):
     await x_start.delete()
     await e.respond(
         text,
-        buttons=buttons,
-        file=search[0].get("thumbnails"),
+        buttons=buttons,        
         parse_mode="html",
         link_preview=False,
-    )
+)
 
 
 play_layout = """
@@ -158,11 +154,6 @@ async def play_song(e):
                     Button.inline("⏸️", data="pause"),
                     Button.inline("⏭️", data="next"),
                     Button.inline("⏹️", data="stop"),
-                ],
-                [
-                    Button.inline(
-                        "➕ Group Playlist", data="group_playlist_{}".format(song_id)
-                    )
                 ],
                 [
                     Button.inline(
@@ -296,11 +287,6 @@ async def next_song_play_skip_(e):
                 ],
                 [
                     Button.inline(
-                        "➕ Group Playlist", data="group_playlist_{}".format(song_name)
-                    )
-                ],
-                [
-                    Button.inline(
                         "➕ Personal Playlist", data="my_playlist_{}".format(song_name)
                     )
                 ],
@@ -351,11 +337,6 @@ async def skip_song_(e):
                 ],
                 [
                     Button.inline(
-                        "➕ Group Playlist", data="group_playlist_{}".format(song_name)
-                    )
-                ],
-                [
-                    Button.inline(
                         "➕ Personal Playlist", data="my_playlist_{}".format(song_name)
                     )
                 ],
@@ -365,10 +346,6 @@ async def skip_song_(e):
             file=thumb,
         )
 
-
-@Mbot(pattern="^/player")
-async def get_current_playlist(e):
-    print("play")
 
 
 @Cbq(pattern="my_playlist(\_(.*))")
@@ -384,3 +361,8 @@ async def add_to_play_list_(e):
         return await e.answer("This song is already in your playlist.", alert=True)
     add_song(e.sender_id, str(song))
     await e.answer(f"Added to **{e.sender.first_name}**'s playlist!")
+
+@Cbq(pattern="close_menu")
+async def delete_current_messege_(e):    
+        await e.edit("Closing Menu")
+        await e.delete()
