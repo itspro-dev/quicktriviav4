@@ -1,15 +1,15 @@
 {
-      "name": "Miley",
-      "description": "A Telethon based Telegram group management bot.",
-      "logo": "https://telegra.ph/file/e1e8299d68ada01e98c5a.jpg",
+      "name": "Patricia",
+      "description": "A Telethon based Telegram group Musicbot.",
+      "logo": "https://telegra.ph/file/cbb7309967e8648c21032.jpg",
       "keywords": [
          "Telethon",
          "Telegram",
          "Group",
          "manager",
-         "Miley"
+         "Patricia"
       ],   
-   "repository": "https://github.com/Amarnathcdj/Miley",
+   "repository": "https://github.com/TEAM-PATRICIA/PatriciaMusic2.0",
    "addons": [
       {
          "options": {
@@ -49,7 +49,7 @@
          "value": "RoseLoverX"
       },
       "STRING_SESSION": {
-         "description": "Telegram String Session",
+         "description": "Telethon  String Session get it from t.me/SessionGeneratorBot",
          "required": true,
          "value": ""
       },
@@ -76,7 +76,7 @@
       "UPSTREAM_REPO_URL": {
          "description": "Required for Update module",
          "required": true,
-         "value": "https://github.com/Amarnathcdj/Miley"
+         "value": "https://github.com/TEAM-PATRICIA/PatriciaMusic2.0"
       }
    },
    "keywords": [
@@ -84,8 +84,8 @@
       "Telethon",
       "group",
       "manager",
-      "Miley"
+      "Patricia"
    ],
-   "name": "Miley",
-   "repository": "https://github.com/Amarnathcdj/Miley"
+   "name": "Patricia",
+   "repository": "https://github.com/TEAM-PATRICIA/PatriciaMusic2.0"
 }
