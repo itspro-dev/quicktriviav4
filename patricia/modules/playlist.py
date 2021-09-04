@@ -15,7 +15,6 @@ Select The Playlist, You want to check!
     buttons = [
         [
             Button.inline("Personal Playlist", data="p_play"),
-            Button.inline("Group's Playlist", data="g_play"),
         ],
         [Button.inline("🗑️ Close Menu", data="close_menu")],
     ]
@@ -38,3 +37,9 @@ async def personnel_playlist_(e):
         await e.edit(playlist_q)
     else:
         await e.respond("9")
+
+@Cbq(pattern="close_menu")
+async def delete_current_messege_(e):    
+        await e.edit("Closing Menu")
+        await e.delete()
+    
