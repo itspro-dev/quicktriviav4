@@ -1,5 +1,12 @@
 telethon
+ffmpeg
+youtube_dl
 dnspython
 pymongo
 pytgcalls==2.0.0.dev4
-git+https://github.com/MarshalX/tgcalls@add-custom-mtproto-clients-support#subdirectory=pytgcalls
+tgcalls
+youtube_search
+youtube_search_python
+python-dotenv
+db
+Pillow
