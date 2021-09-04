@@ -23,7 +23,7 @@
 ❍ /resume - resume song play
 ❍ /skip - play next song
 ❍ /end - stop music play
-
+```
 ## Sᴛʀɪɴɢ Sᴇssɪᴏɴ ⚙️
 [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@Botsupport/PatriciaXmusic)
 
