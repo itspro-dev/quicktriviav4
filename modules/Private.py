@@ -49,7 +49,7 @@ async def start(client, message):
     ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply_photo(photo="https://telegra.ph/file/33cc1aeaf934f19943bdc.jpg", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
+    await message.reply_photo(photo="https://telegra.ph/file/cd1c80751b6c75a655b1d.jpg", caption=HOME_TEXT.format(message.from_user.first_name, message.from_user.id), reply_markup=reply_markup)
     await message.delete()
 
 
@@ -57,15 +57,15 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-                InlineKeyboardButton('📢 Updates', url='https://t.me/TGBOTZXD'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/TGBOTSXD')
+                InlineKeyboardButton('📢 Updates', url='https://t.me/v4updates'),
+                InlineKeyboardButton('💬 Support', url='https://t.me/v4updatesdiscussion')
                 ],[
-                InlineKeyboardButton('🤖 Developer', url='https://t.me/piroXpower'),
-                InlineKeyboardButton('🎧 Chats', url='https://t.me/frndsXworld')
+                InlineKeyboardButton('🤖 Developer', url='https://t.me/aboutmeaditya'),
+                InlineKeyboardButton('🎧 Chats', url='https://t.me/quicktrivia')
                 ],[
-                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/TEAM-PATRICIA/PatriciaMusic2.0'),
+                InlineKeyboardButton('📜 Source Code 📜', url='https://telegra.ph/file/776826cc26ba5897a9ec2.mp4'),
        ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
-    await message.reply_photo(photo="https://telegra.ph/file/33cc1aeaf934f19943bdc.jpg", caption=HELP, reply_markup=reply_markup)
+    await message.reply_photo(photo="https://telegra.ph/file/cd1c80751b6c75a655b1d.jpg", caption=HELP, reply_markup=reply_markup)
     await message.delete()
