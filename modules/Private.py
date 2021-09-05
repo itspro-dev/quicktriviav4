@@ -6,11 +6,11 @@ import os
 import sys
 
 
-HOME_TEXT = "<b>Helo, [{}](tg://user?id={})\n\n• Iam A Bot Project by @TGBOTZXD\n• I Can Manage Group VC's\n\n• Hit /help to know about available commands.</b>"
+HOME_TEXT = "<b>Helo, [{}](tg://user?id={})\n\n• Iam A Bot Project made by @Sadlife\n# my group @quicktrivia\n• I Can Manage Group VC's\n\n• Hit /help to know about available commands.</b>"
 HELP = """
 🎧 <b>I Can Play Musics On VoiceChats 🤪</b>
 
-🎶 **Common Commands**:
+🎶 **Common Commands**:by @Sadlife56 or aditya
 • `/song` __Download Song from youtube__
 • `/play`  __Play song you requested__
 • `/help` __Show help for commands__
@@ -21,7 +21,7 @@ HELP = """
 • `/current` __Show now playing__
 • `/playlist` __Show now playing list__
 • `/video` __Downloads video song quickly__
-🎶 **Admin Commands**:
+🎶 **Admin Commands**:*aditya, tushar, lucky, harsh, utkarsh, sg*
 • `/player`  __Open music player settings panel__
 • `/pause` __Pause song play__
 • `/skip` __Skip next song__
@@ -30,7 +30,7 @@ HELP = """
 • `/end` __Stops music play__
 • `/admincache` __Refresh list of admins with vc power__
 © Powered By 
-[ __@tgbotsXD || @tgbotzXD__ ]
+[ __@quicltrivia || @Sadlife56__ ]
 """
 
 
@@ -39,13 +39,13 @@ HELP = """
 async def start(client, message):
     buttons = [
        [
-                InlineKeyboardButton('📢 Updates', url='https://t.me/TGBOTZXD'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/TGBOTSXD')
+                InlineKeyboardButton('📢 Updates', url='https://t.me/v4updates'),
+                InlineKeyboardButton('💬 Support', url='https://t.me/v4updatesdiscussion')
                 ],[
-                InlineKeyboardButton('🤖 Developer', url='https://t.me/piroXpower'),
-                InlineKeyboardButton('🎧 Chats', url='https://t.me/frndsXworld')
+                InlineKeyboardButton('🤖 Developer', url='https://t.me/aboutmeaditya'),
+                InlineKeyboardButton('🎧 Chats', url='https://t.me/quicktrivia')
                 ],[
-                InlineKeyboardButton('📜 Source Code 📜', url='https://github.com/TEAM-PATRICIA/PatriciaMusic2.0'),
+                InlineKeyboardButton('📜 Source Code 📜', url='https://telegra.ph/file/776826cc26ba5897a9ec2.mp4'),
     ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
