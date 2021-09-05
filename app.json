@@ -1,6 +1,6 @@
 {
-  "name": "Patricia",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "name": "QUICK_TRIVIA_V4",
+  "description": "Open-Source bot to play songs in QUICK TRIVIA Telegram Group Voice Chat. MADE BY ADITYA OR @Sadlife56.",
   "keywords": ["music", "voicechat", "telegram"],
   "repository": "https://github.com/TEAM-PATRICIA/PatriciaMusic2.0",
   "stack": "container",
@@ -30,12 +30,12 @@
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "Patricia_support"
+      "value": "v4updatesdiscussion"
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
       "required": false,
-      "value": "PatriciaMusic"
+      "value": "quicktriviaV4"
     },
     "ASSISTANT_NAME": {
       "description": "Your MusicPlayer's assistant Username without @.",
@@ -49,12 +49,12 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/cdaa3de5adab7ac73689f.png"
+      "value": "https://telegra.ph/file/94ecff937a040006cec9a.png"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
       "required": false,
-      "value": "patricia_updates"
+      "value": "v4updates"
     },    
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
