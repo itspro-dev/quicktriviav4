@@ -1,20 +1,20 @@
 <p align="center">
     <a href="https://app.codacy.com/gh/TEAM-PATRICIA/PatriciaMusic2.0/dashboard?branch=Legacy"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=cyan&logo=codacy&logoColor=white&style=for-the-badge" alt="Codacy" /></a>
-    <a href="https://github.com/TEAM-PATRICIA/PatriciaMusic2.0"> <img src="https://img.shields.io/github/repo-size/TeamInnexia/innexiaBot?color=cyan&logo=github&logoColor=white&style=for-the-badge" /></a>
+    <a href="https://github.com/anglefree/quicktriviav4.git"> <img src="https://img.shields.io/github/repo-size/TeamInnexia/innexiaBot?color=cyan&logo=github&logoColor=white&style=for-the-badge" /></a>
 </p>
 
 
-# Pᴀᴛʀɪᴄɪᴀ•Mᴜsɪᴄ👮
-💡 This is Innexia An Advanced Telegram CHAT Bot For Best AI Experience !! 🤖 
+# quicktriviav4👮
+💡 This is Innexia An Advanced Telegram CHAT Bot For Best AI Experience made by aditya !! 🤖 
 
-![logo](https://telegra.ph/file/4d1c1151214987122659b.jpg)
-#  💡Dᴇᴠᴇʟᴏᴩᴇᴍᴇɴᴛ•Sᴜᴩᴩᴏʀᴛ👥[Here !](https://t.me/patricia_support)
+![logo](https://telegra.ph/file/a2bf8c1ae3e2c247a23fa.jpg)
+#  💡Dᴇᴠᴇʟᴏᴩᴇᴍᴇɴᴛ•Sᴜᴩᴩᴏʀᴛ👥[Here !](https://t.me/v4updatesdiscussion)
 
-## Me On Telegram As [💥 Pᴀᴛʀɪᴄɪᴀ 💥](https://t.me/PATRICIA_ROBOT)
+## Me On Telegram As [💥 aditya 💥](https://t.me/aboutmeaditya)
 
 ## Cᴏᴍᴍᴀɴᴅs
 ```
-->Music•Player<-
+->Music•Player<- by aditya
 =>> *Song Playing* 🎧 
 ❍ /play  - play song you requested
 ❍ /dplay  - play song you requested via deezer
@@ -43,6 +43,6 @@
 
 ## DEPLOY ON HEROKU 🚀
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/TEAM-PATRICIA/PatriciaMusic2.0"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/anglefree/quicktriviav4"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
  
 
