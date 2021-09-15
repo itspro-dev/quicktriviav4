@@ -178,7 +178,7 @@ def r_ply(type_):
             [
                 InlineKeyboardButton("Playlist 📖", "playlist"),
             ],
-            [InlineKeyboardButton("❌ Close", "cls")],
+            [InlineKeyboardButton("🗑 Close", "cls")],
         ]
     )
     return mar
@@ -395,7 +395,7 @@ async def m_cb(b, cb):
                 [
                     InlineKeyboardButton("Playlist 📖", "playlist"),
                 ],
-                [InlineKeyboardButton("❌ Close", "cls")],
+                [InlineKeyboardButton("🗑 Close", "cls")],
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
@@ -522,7 +522,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
+                f"😅 Videos longer than {DURATION_LIMIT} minute(s) aren't allowed to play!"
             )
         keyboard = InlineKeyboardMarkup(
             [
@@ -530,12 +530,12 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                     InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/74f1b44baa3328c86b9a9.jpg"
+        thumb_name = "https://telegra.ph/file/613d2a43bbb508af05fd6.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -574,10 +574,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                  InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                  InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
+                  InlineKeyboardButton(text="AǫᴜᴀMᴀɴ ࿐", url="https://t.me/AQUAMAN_XD_INFO"),
                 ],
-                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -600,7 +600,7 @@ async def play(_, message: Message):
             toxxt = "**Select the song you want to play**\n\n"
             j = 0
             useer=user_name
-            emojilist = ["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣",]
+            emojilist = ["1","2","3","4","5",]
 
             while j < 5:
                 toxxt += f"{emojilist[j]} **Title - [{results[j]['title']}](https://youtube.com{results[j]['url_suffix']})**\n"
@@ -612,15 +612,15 @@ async def play(_, message: Message):
             koyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("1️⃣", callback_data=f'plll 0|{query}|{user_id}'),
-                        InlineKeyboardButton("2️⃣", callback_data=f'plll 1|{query}|{user_id}'),
-                        InlineKeyboardButton("3️⃣", callback_data=f'plll 2|{query}|{user_id}'),
+                        InlineKeyboardButton("1", callback_data=f'plll 0|{query}|{user_id}'),
+                        InlineKeyboardButton("2", callback_data=f'plll 1|{query}|{user_id}'),
+                        InlineKeyboardButton("3", callback_data=f'plll 2|{query}|{user_id}'),
                     ],
                     [
-                        InlineKeyboardButton("4️⃣", callback_data=f'plll 3|{query}|{user_id}'),
-                        InlineKeyboardButton("5️⃣", callback_data=f'plll 4|{query}|{user_id}'),
+                        InlineKeyboardButton("4", callback_data=f'plll 3|{query}|{user_id}'),
+                        InlineKeyboardButton("5", callback_data=f'plll 4|{query}|{user_id}'),
                     ],
-                    [InlineKeyboardButton(text="Close 🛑", callback_data="cls")],
+                    [InlineKeyboardButton(text="Close 🗑", callback_data="cls")],
                 ]
             )       
             await lel.edit(toxxt,reply_markup=koyboard,disable_web_page_preview=True)
@@ -653,12 +653,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                        InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                        InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
+                        InlineKeyboardButton(text="AǫᴜᴀMᴀɴ ࿐", url=f"https://t.me/AQUAMAN_XD_INFO"),
                     ],
                     [InlineKeyboardButton(text="🗑Close", callback_data="cls")],
                 ]
@@ -801,10 +797,10 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                  InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                  InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
+                  InlineKeyboardButton(text="AǫᴜᴀMᴀɴ ࿐", url=f"https://t.me/AQUAMAN_XD_INFO"),
                 ],
-                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
     )
     requested_by = message.from_user.first_name
@@ -843,7 +839,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Playing** here the song requested by {} via Youtube Music 😜".format(
+            caption="🎥 **Playing** here the song requested by {} via Youtube Music 😉 join @AQUAMAN_XD_INFO".format(
                 message.from_user.mention()
             ),
         )
@@ -944,7 +940,7 @@ async def deezer(client: Client, message_: Message):
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
             ],
             [InlineKeyboardButton(text="Listen On Deezer 🎬", url=f"{url}")],
-            [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+            [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
         ]
     )
     file_path = await convert(wget.download(url))
@@ -988,7 +984,7 @@ async def deezer(client: Client, message_: Message):
     os.remove("final.png")
 
 
-@Client.on_message(filters.command("splay") & filters.group & ~filters.edited)
+@Client.on_message(filters.command("aplay") & filters.group & ~filters.edited)
 async def jiosaavn(client: Client, message_: Message):
     global que
     if message_.chat.id in DISABLED_GROUPS:
@@ -1051,7 +1047,7 @@ async def jiosaavn(client: Client, message_: Message):
     text = message_.text.split(" ", 1)
     query = text[1]
     res = lel
-    await res.edit(f"Searching 👀👀👀 for `{query}` on jio saavn")
+    await res.edit(f"Searching for `{query}` on private server")
     try:
         songs = await arq.saavn(query)
         if not songs.ok:
@@ -1074,17 +1070,13 @@ async def jiosaavn(client: Client, message_: Message):
     except:
         pass    
     keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-            ],
+         [
             [
                 InlineKeyboardButton(
-                    text="Join Updates Channel", url=f"https://t.me/{updateschannel}"
+                    text="AǫᴜᴀMᴀɴ ࿐", url=f"https://t.me/AQUAMAN_XD_INFO"
                 )
             ],
-            [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+            [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
         ]
     )
     file_path = await convert(wget.download(slink))
@@ -1102,11 +1094,11 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"✯{bn}✯=#️⃣ Queued at position {position}",
+            caption=f"✯{bn}✯=#️⃣ Queued at position {position} join @AQUAMAN_XD_INFO",
         )
 
     else:
-        await res.edit_text(f"{bn}=▶️ Playing.....")
+        await res.edit_text(f"{bn}=▶️ Playing.....  join @AQUAMAN_XD_INFO")
         que[chat_id] = []
         qeue = que.get(chat_id)
         s_name = sname
@@ -1126,7 +1118,7 @@ async def jiosaavn(client: Client, message_: Message):
         chat_id=message_.chat.id,
         reply_markup=keyboard,
         photo="final.png",
-        caption=f"Playing {sname} Via Jiosaavn",
+        caption=f"Playing {sname} by AǫᴜᴀMᴀɴ ࿐",
     )
     os.remove("final.png")
 
@@ -1182,10 +1174,10 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                  InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                  InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
+                  InlineKeyboardButton(text="AǫᴜᴀMᴀɴ ࿐", url=f"https://t.me/AQUAMAN_XD_INFO"),
                 ],
-                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
     )
     requested_by = useer_name
@@ -1205,7 +1197,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"#⃣  Song requested by {r_by.mention} **queued** at position {position}!",
+            caption=f"#⃣  Song requested by {r_by.mention} **queued** at position {position}! Join @AQUAMAN_XD_INFO",
             reply_markup=keyboard,
         )
         os.remove("final.png")
