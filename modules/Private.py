@@ -7,11 +7,11 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_photo("https://telegra.ph/file/557996394db2a9781f2b2.jpg")
+    await message.reply_photo("https://telegra.ph/file/5993e1a643d3986a27d9e.jpg")
     await message.reply_text(
-        f"""**Hey, I'm 𓄂AǫᴜᴀMᴀɴ ࿐ | Mᴜsɪᴄ Bᴏᴛ |🎵
+        f"""**Hey, I'm AXEL 😊🎵
 
-I can play ꬺᶙȿᶖɕ  in your group's voice CHAT Developed by [𓄂AǫᴜᴀMᴀɴ ࿐](https://t.me/AQUAMAN_XD)
+I can play ꬺᶙȿᶖɕ  in your group's voice CHAT Developed by [Axel](https://t.me/suraj_o_p)
 
 Add me to your group and play music freely😆!**
         """,
@@ -19,14 +19,14 @@ Add me to your group and play music freely😆!**
             [
                 [
                     InlineKeyboardButton(
-                        "Oᴡɴᴇʀ", url="https://t.me/AQUAMAN_XD")
+                        "Oᴡɴᴇʀ", url="https://t.me/suraj_o_p")
                   ],[
                     InlineKeyboardButton(
-                        "🛡 SUPPORT GROUP 🛡", url="https://t.me/AQUAMAN_XD_WORLD"
+                        "🛡 SUPPORT GROUP 🛡", url="https://t.me/AXEL_SUPPORT"
                     ),
                 ],[ 
                     InlineKeyboardButton(
-                        "GROUP ME LEJAO 😆", url="https://t.me/AQUAMAN_MUSIC_BOT?startgroup=true"
+                        "GROUP ME LEJAO 😉", url="https://t.me/AXEL_MUSICBOT?startgroup=true"
                     )]
             ]
         ),
@@ -40,7 +40,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🛡 SUPPORT 🛡", url="https://t.me/AQUAMAN_XD_WORLD")
+                        "📚 COMMANDS 📚", url="https://t.me/AXEL_SUPPPORTXD/24")
                 ]
             ]
         )
