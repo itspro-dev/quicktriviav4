@@ -10,11 +10,11 @@
 ![logo](https://telegra.ph/file/a2bf8c1ae3e2c247a23fa.jpg)
 #  💡Dᴇᴠᴇʟᴏᴩᴇᴍᴇɴᴛ•Sᴜᴩᴩᴏʀᴛ👥[Here !](https://t.me/v4updatesdiscussion)
 
-## Me On Telegram As [💥 aditya 💥](https://t.me/aboutmeaditya)
+## Me On Telegram As [💥 AXEL 💥](https://t.me/SURAJ_O_P)
 
 ## Cᴏᴍᴍᴀɴᴅs
 ```
-->Music•Player<- by aditya
+->Music•Player<- by AXEL
 =>> *Song Playing* 🎧 
 ❍ /play  - play song you requested
 ❍ /dplay  - play song you requested via deezer
