@@ -575,7 +575,7 @@ async def play(_, message: Message):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="AǫᴜᴀMᴀɴ ࿐", url="https://t.me/AQUAMAN_XD_INFO"),
+                  InlineKeyboardButton(text="JOIN", url="https://t.me/AXEL_SUPPORT"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -654,7 +654,7 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="AǫᴜᴀMᴀɴ ࿐", url=f"https://t.me/AQUAMAN_XD_INFO"),
+                        InlineKeyboardButton(text="JOIN", url=f"https://t.me/AXEL_SUPPORT"),
                     ],
                     [InlineKeyboardButton(text="🗑Close", callback_data="cls")],
                 ]
@@ -798,7 +798,7 @@ async def ytplay(_, message: Message):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="AǫᴜᴀMᴀɴ ࿐", url=f"https://t.me/AQUAMAN_XD_INFO"),
+                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/AXEL_SUPPORT"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -839,7 +839,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="🎥 **Playing** here the song requested by {} via Youtube Music 😉 join @AQUAMAN_XD_INFO".format(
+            caption="🎥 **Playing** here the song requested by {} via Youtube Music 😉 join @AXEL_SUPPORT".format(
                 message.from_user.mention()
             ),
         )
@@ -1032,7 +1032,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @patriciaXmusic to your Group and try again</b>",
+                        "\n\nOr manually add ASSISTANCE to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -1073,7 +1073,7 @@ async def jiosaavn(client: Client, message_: Message):
          [
             [
                 InlineKeyboardButton(
-                    text="AǫᴜᴀMᴀɴ ࿐", url=f"https://t.me/AQUAMAN_XD_INFO"
+                    text="JOIN", url=f"https://t.me/AXEL_SUPPORT"
                 )
             ],
             [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
@@ -1118,7 +1118,7 @@ async def jiosaavn(client: Client, message_: Message):
         chat_id=message_.chat.id,
         reply_markup=keyboard,
         photo="final.png",
-        caption=f"Playing {sname} by AǫᴜᴀMᴀɴ ࿐",
+        caption=f"Playing {sname} by AXEL",
     )
     os.remove("final.png")
 
@@ -1175,7 +1175,7 @@ async def lol_cb(b, cb):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="AǫᴜᴀMᴀɴ ࿐", url=f"https://t.me/AQUAMAN_XD_INFO"),
+                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/AXEL_SUPPORT"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -1197,7 +1197,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"#⃣  Song requested by {r_by.mention} **queued** at position {position}! Join @AQUAMAN_XD_INFO",
+            caption=f"#⃣  Song requested by {r_by.mention} **queued** at position {position}! Join @AXEL_SUPPORT",
             reply_markup=keyboard,
         )
         os.remove("final.png")
