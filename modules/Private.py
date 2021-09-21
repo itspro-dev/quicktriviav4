@@ -26,7 +26,7 @@ Add me to your group and play music freely😆!**
                     ),
                 ],[ 
                     InlineKeyboardButton(
-                        "GROUP ME LEJAO 😉", url="https://t.me/AXEL_MUSICBOT?startgroup=true"
+                        "ADD ME TO YOUR GROUP😉", url="https://t.me/AXEL_MUSICBOT?startgroup=true"
                     )]
             ]
         ),
@@ -35,7 +35,7 @@ Add me to your group and play music freely😆!**
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**BOT IS WORKING**""",
+      await message.reply_text("""**AXELMUSIC BOT IS WORKING**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
