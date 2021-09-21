@@ -1020,7 +1020,7 @@ async def jiosaavn(client: Client, message_: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message_.chat.id, "I joined this group for playing music in VC"
+                        message_.chat.id, "I joined this group for playing music 🎶 in VC"
                     )
                     await lel.edit(
                         "<b>helper userbot joined your chat</b>",
@@ -1094,11 +1094,11 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"✯{bn}✯=#️⃣ Queued at position {position} join @AQUAMAN_XD_INFO",
+            caption=f"✯{bn}✯=#️⃣ Queued at position {position} join @AXEL_SUPPORT_INFO",
         )
 
     else:
-        await res.edit_text(f"{bn}=▶️ Playing.....  join @AQUAMAN_XD_INFO")
+        await res.edit_text(f"{bn}=▶️ Playing.....  join @AXEL_SUPPPORTXD_INFO")
         que[chat_id] = []
         qeue = que.get(chat_id)
         s_name = sname
