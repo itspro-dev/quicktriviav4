@@ -798,7 +798,7 @@ async def ytplay(_, message: Message):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/Shinobu_Support"),
+                  InlineKeyboardButton(text="SUPPORT", url=f"https://t.me/Shinobu_Support"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
