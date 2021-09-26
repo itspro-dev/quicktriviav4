@@ -484,7 +484,7 @@ async def play(_, message: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add assistant to your Group and try again</b>",
+                        "\n\nOr manually add @ShinobuVCassistant to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -575,7 +575,7 @@ async def play(_, message: Message):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="JOIN", url="https://t.me/AXEL_SUPPORT"),
+                  InlineKeyboardButton(text="JOIN", url="https://t.me/Shinobu_Support"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -654,7 +654,7 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="JOIN", url=f"https://t.me/AXEL_SUPPORT"),
+                        InlineKeyboardButton(text="JOIN", url=f"https://t.me/Shinobu_Support"),
                     ],
                     [InlineKeyboardButton(text="🗑Close", callback_data="cls")],
                 ]
@@ -752,7 +752,7 @@ async def ytplay(_, message: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add assistant to your Group and try again</b>",
+                        "\n\nOr manually add @ShinobuVCassistant to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -798,7 +798,7 @@ async def ytplay(_, message: Message):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/AXEL_SUPPORT"),
+                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/Shinobu_Support"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -839,7 +839,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="🎥 **Playing** here the song requested by {} via Youtube Music 😉 join @AXEL_SUPPORT".format(
+            caption="🎥 **Playing** here the song requested by {} via Youtube Music 😉 join @Shinobu_Support".format(
                 message.from_user.mention()
             ),
         )
@@ -894,7 +894,7 @@ async def deezer(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add assistant to your Group and try again</b>",
+                        "\n\nOr manually add @ShinobuVCassistant to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -1039,7 +1039,7 @@ async def jiosaavn(client: Client, message_: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            "<i> helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            "<i> helper Userbot not in this chat, Ask admin to send /play command for first time or add @ShinobuVCassistant manually</i>"
         )
         return
     requested_by = message_.from_user.first_name
@@ -1073,7 +1073,7 @@ async def jiosaavn(client: Client, message_: Message):
          [
             [
                 InlineKeyboardButton(
-                    text="JOIN", url=f"https://t.me/AXEL_SUPPORT"
+                    text="JOIN", url=f"https://t.me/Shinobu_Support"
                 )
             ],
             [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
@@ -1094,7 +1094,7 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"✯{bn}✯=#️⃣ Queued at position {position} join @AXEL_SUPPORT_INFO",
+            caption=f"✯{bn}✯=#️⃣ Queued at position {position} join @Shinobu_Support",
         )
 
     else:
@@ -1175,7 +1175,7 @@ async def lol_cb(b, cb):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/AXEL_SUPPORT"),
+                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/Shinobu_Support"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -1197,7 +1197,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"#⃣  Song requested by {r_by.mention} **queued** at position {position}! Join @AXEL_SUPPORT",
+            caption=f"#⃣  Song requested by {r_by.mention} **queued** at position {position}! Join @Shinobu_Support",
             reply_markup=keyboard,
         )
         os.remove("final.png")
