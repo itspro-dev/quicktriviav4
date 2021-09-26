@@ -575,7 +575,7 @@ async def play(_, message: Message):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="JOIN", url="https://t.me/Shinobu_Support"),
+                  InlineKeyboardButton(text="SUPPORT", url="https://t.me/Shinobu_Support"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
