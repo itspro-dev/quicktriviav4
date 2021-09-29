@@ -654,7 +654,7 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="JOIN", url=f"https://t.me/AXEL_SUPPORT"),
+                        InlineKeyboardButton(text="JOIN", url=f"https://t.me/Otaku_zon"),
                     ],
                     [InlineKeyboardButton(text="🗑Close", callback_data="cls")],
                 ]
@@ -798,7 +798,7 @@ async def ytplay(_, message: Message):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/AXEL_SUPPORT"),
+                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/Otaku_zon"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -839,7 +839,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="🎥 **Playing** here the song requested by {} via Youtube Music 😉 join @AXEL_SUPPORT".format(
+            caption="🎥 **Playing** here the song requested by {} via Youtube Music 😉 join @Otaku_zon".format(
                 message.from_user.mention()
             ),
         )
@@ -1073,7 +1073,7 @@ async def jiosaavn(client: Client, message_: Message):
          [
             [
                 InlineKeyboardButton(
-                    text="JOIN", url=f"https://t.me/AXEL_SUPPORT"
+                    text="JOIN", url=f"https://t.me/Otaku_zon"
                 )
             ],
             [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
@@ -1094,11 +1094,11 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"✯{bn}✯=#️⃣ Queued at position {position} join @AXEL_SUPPORT_INFO",
+            caption=f"✯{bn}✯=#️⃣ Queued at position {position} join @Otaku_zon",
         )
 
     else:
-        await res.edit_text(f"{bn}=▶️ Playing.....  join @AXEL_SUPPPORTXD_INFO")
+        await res.edit_text(f"{bn}=▶️ Playing.....  join @Otaku_zon")
         que[chat_id] = []
         qeue = que.get(chat_id)
         s_name = sname
@@ -1118,7 +1118,7 @@ async def jiosaavn(client: Client, message_: Message):
         chat_id=message_.chat.id,
         reply_markup=keyboard,
         photo="final.png",
-        caption=f"Playing {sname} by AXEL",
+        caption=f"Playing {sname} by Maki",
     )
     os.remove("final.png")
 
@@ -1175,7 +1175,7 @@ async def lol_cb(b, cb):
             [
                 [
                   InlineKeyboardButton(text="🎥 YouTube", url=f"{url}"),
-                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/AXEL_SUPPORT"),
+                  InlineKeyboardButton(text="JOIN", url=f"https://t.me/Otaku_zon"),
                 ],
                  [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
@@ -1197,7 +1197,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"#⃣  Song requested by {r_by.mention} **queued** at position {position}! Join @AXEL_SUPPORT",
+            caption=f"#⃣  Song requested by {r_by.mention} **queued** at position {position}! Join @Otaku_zon",
             reply_markup=keyboard,
         )
         os.remove("final.png")
